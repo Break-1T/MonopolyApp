@@ -2,13 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Controls;
 
 namespace MonopolyApp.Interfaces
 {
-    interface IBranch
+    interface IBranch:IField
     {
-        public double Price { get; }
-        public Monopoly MonopolyType { get; set; }
-        public Player Owner { get; set; } 
+        double Price { get; }
+        double Tax { get; set; }
+        
+        Player Owner { get; set; }
     }
 }

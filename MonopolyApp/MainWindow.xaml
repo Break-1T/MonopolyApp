@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MonopolyApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="350" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="#f5cac4">
+        <Border Margin="10" BorderBrush="Black" BorderThickness="0" CornerRadius="25"  Background="#dadcf0">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Content="Начать игру!"/>
+                <Button Content="Начать игру!"/>
+                <Button Content="Начать игру!"/>
+                <Button Content="Начать игру!"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

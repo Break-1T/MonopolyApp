@@ -6,4 +6,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Fields\Branches\" />
+    <Folder Include="Fields\Special fields\" />
+    <Folder Include="Field resources\" />
+  </ItemGroup>
+
 </Project>

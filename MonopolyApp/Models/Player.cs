@@ -7,8 +7,10 @@ namespace MonopolyApp.Models
 {
     class Player : IPlayer
     {
-        public double Money { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public List<Branch> Branches { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Money { get; set; }
+        public int Coordinate { get; set; }
+        public List<Branch> Branches { get; set; }
+        public string Name { get; set; }
 
         public void Color()
         {

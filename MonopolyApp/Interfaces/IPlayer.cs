@@ -7,7 +7,9 @@ namespace MonopolyApp.Interfaces
 {
     interface IPlayer
     {
-        public double Money { get; set; }
+        string Name { get; set; }
+        double Money { get; set; }
+        int Coordinate { get; set; }
         public List<Branch> Branches { get; set; }
         void Move();
         void Color();
