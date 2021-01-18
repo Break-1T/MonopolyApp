@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MonopolyApp.Game;
 
 namespace MonopolyApp
 {
@@ -23,6 +25,19 @@ namespace MonopolyApp
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            MainGame mainGame = new MainGame();
+            this.Hide();
+            mainGame.Show();
+            mainGame.Closing += GameClosing;
+        }
+
+        private void GameClosing(object sender, CancelEventArgs e)
+        {
+            this.Close();
         }
     }
 }

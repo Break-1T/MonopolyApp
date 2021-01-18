@@ -5,8 +5,9 @@ using MonopolyApp.Models;
 
 namespace MonopolyApp.Interfaces
 {
-    interface IQuestion:IField
+    interface IQuestionAction
     {
-        List<IQuestionAction> allActions { get; set; }
+        string Content { get; set; }
+        void Action(Player player);
     }
 }

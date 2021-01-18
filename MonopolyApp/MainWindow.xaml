@@ -6,14 +6,12 @@
         xmlns:local="clr-namespace:MonopolyApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
-    <Grid Background="#f5cac4">
+    <Grid Background="#FF292120">
         <Border Margin="10" BorderBrush="Black" BorderThickness="0" CornerRadius="25"  Background="#dadcf0">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Button Content="Начать игру!"/>
-                <Button Content="Начать игру!"/>
-                <Button Content="Начать игру!"/>
-                <Button Content="Начать игру!"/>
-            </StackPanel>
+                    <Button Content="Начать игру!" FontFamily="Comic Sans MS" FontSize="36" Cursor="Hand"
+                        Background="#FFBEDAB3" BorderThickness="0" Click="ButtonBase_OnClick"/>
+        </StackPanel>
         </Border>
     </Grid>
 </Window>
