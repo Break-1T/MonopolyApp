@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Field resources\" />
+    <None Remove="Resources\Pictures\monpic.jfif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Field resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\monpic.jfif" />
   </ItemGroup>
 
 </Project>

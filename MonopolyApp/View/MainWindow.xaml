@@ -1,16 +1,20 @@
-﻿<Window x:Class="MonopolyApp.MainWindow"
+﻿<Window x:Class="MonopolyApp.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MonopolyApp"
+        xmlns:local="clr-namespace:MonopolyApp.View"
+        xmlns:mv ="clr-namespace:MonopolyApp.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="MonopolyApp" Height="350" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Window.DataContext>
+        <mv:StartWindowViewModel/>
+    </Window.DataContext>
     <Grid Background="#FF292120">
-        <Border Margin="10" BorderBrush="Black" BorderThickness="0" CornerRadius="25"  Background="#dadcf0">
+        <Border Margin="10" Grid.Row="0" BorderBrush="Black" BorderThickness="0" CornerRadius="25"  Background="#dadcf0">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Button Content="Начать игру!" FontFamily="Comic Sans MS" FontSize="36" Cursor="Hand"
-                        Background="#FFBEDAB3" BorderThickness="0" Click="ButtonBase_OnClick"/>
+                        Background="#dadcf0" BorderThickness="0"/>
         </StackPanel>
         </Border>
     </Grid>
