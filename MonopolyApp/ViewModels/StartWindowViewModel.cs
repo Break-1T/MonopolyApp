@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
 using System.Windows.Navigation;
+using MonopolyApp.Infrastructure.Commands.Base;
 using MonopolyApp.ViewModels.Base;
 
 namespace MonopolyApp.ViewModels
@@ -10,15 +12,9 @@ namespace MonopolyApp.ViewModels
     {
         public StartWindowViewModel()
         {
-            _Title = "Начать игру!";
+            ICommand = new Command();
         }
 
-        private string _Title;
-
-        public string Title
-        {
-            get => _Title;
-            set => Set(ref _Title, value);
-        }
+        private ICommand ExitCommand;
     }
 }

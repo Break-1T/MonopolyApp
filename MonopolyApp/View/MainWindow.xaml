@@ -10,11 +10,20 @@
     <Window.DataContext>
         <mv:StartWindowViewModel/>
     </Window.DataContext>
+    <Window.Resources>
+        <Style x:Key="ButtonStyle">
+            <Setter Property="Control.FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Control.FontSize" Value="36"/>
+            <Setter Property="Control.Cursor" Value="Hand"/>
+            <Setter Property="Control.Background" Value="#dadcf0"/>
+            <Setter Property="Control.BorderThickness" Value="1"/>
+        </Style>
+    </Window.Resources>
     <Grid Background="#FF292120">
         <Border Margin="10" Grid.Row="0" BorderBrush="Black" BorderThickness="0" CornerRadius="25"  Background="#dadcf0">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Content="Начать игру!" FontFamily="Comic Sans MS" FontSize="36" Cursor="Hand"
-                        Background="#dadcf0" BorderThickness="0"/>
+                    <Button Content="Начать игру!" Style="{StaticResource ButtonStyle}"/>
+                    <Button Content="Выйти" Style="{StaticResource ButtonStyle}"/>
         </StackPanel>
         </Border>
     </Grid>
