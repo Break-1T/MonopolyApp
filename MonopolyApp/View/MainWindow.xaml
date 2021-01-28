@@ -22,8 +22,8 @@
     <Grid Background="#FF292120">
         <Border Margin="10" Grid.Row="0" BorderBrush="Black" BorderThickness="0" CornerRadius="25"  Background="#dadcf0">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Content="Начать игру!" Style="{StaticResource ButtonStyle}"/>
-                    <Button Content="Выйти" Style="{StaticResource ButtonStyle}"/>
+                    <Button Content="Начать игру!" Style="{StaticResource ButtonStyle}" Command="{Binding OpenGameCommand}"/>
+                    <Button Content="Выйти" Style="{StaticResource ButtonStyle}" Command="{Binding ExitCommand}"/>
         </StackPanel>
         </Border>
     </Grid>
